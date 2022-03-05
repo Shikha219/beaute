@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Nova+Cut&family=Nova+Slim&family=Rye&display=swap");
+:root {
+  --primary: #f3c5c5;
+  --primarylight: #c1a3a3;
+  --secondary: #fff;
+  --dark: #694e4e;
+  --brown: #886f6f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: box-sizing;
+  font-size: 1.1rem;
+  font-family: "Cutive Mono", monospace;
+  font-family: "Nova Cut", cursive;
+  font-family: "Rye", cursive;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Nova Slim", cursive;
+}
