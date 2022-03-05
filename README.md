@@ -1,2 +1,2 @@
-# beaute
+# béauté
 The perfect Skin
