@@ -1,0 +1,21 @@
+<div class="main">
+  <form>
+    <div class="container">
+      <input
+        style="display: none"
+        type="file"
+        (change)="selectImage($event)"
+        #fileInput
+      />
+      <img
+        class="camera"
+        src="../../../assets/images/camera.png"
+        (click)="fileInput.click()"
+      />
+    </div>
+    <br />
+    <div>
+      <h2 type="submit" (click)="onSubmit()">Upload</h2>
+    </div>
+  </form>
+</div>

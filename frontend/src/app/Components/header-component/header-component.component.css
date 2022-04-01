@@ -1,0 +1,40 @@
+.brand_logo {
+  display: inline;
+}
+nav {
+  background: #fff;
+  height: 80px;
+  width: 100%;
+}
+img {
+  width: 70px;
+  height: 70px;
+}
+label.logo {
+  color: var(--primary);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 5px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: var(--dark);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: var(--primary);
+  transition: 0.5s;
+}

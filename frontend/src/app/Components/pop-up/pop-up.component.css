@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  height: 450px;
+  width: 649px;
+  border-radius: 10px;
+  background-image: url("../../../assets/images/popup.png");
+  background-position: center;
+  background-size: cover;
+}
+form {
+  position: relative;
+  height: 50%;
+  top: 50%;
+}
+.container {
+  width: 1%;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+.camera {
+  width: 60px;
+  height: 60px;
+}
+h2 {
+  font-family: "Nova Cut", cursive;
+  font-size: 2rem;
+  color: var(--dark);
+  position: absolute;
+  top: 50%;
+  left: 48%;
+}

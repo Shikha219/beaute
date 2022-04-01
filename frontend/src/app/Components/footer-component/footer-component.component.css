@@ -1,0 +1,10 @@
+.footer {
+  background-color: var(--primarylight);
+  color: var(--secondary);
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  padding-top: 1%;
+  font-family: "Nova Cut", cursive;
+}
