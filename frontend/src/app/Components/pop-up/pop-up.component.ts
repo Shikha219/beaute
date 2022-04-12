@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./pop-up.component.css']
 })
 export class PopUpComponent implements OnInit {
-  images: any;
+  image;
 
   constructor(
     private http: HttpClient
@@ -16,20 +16,20 @@ export class PopUpComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  selectImage(event:any) {
+  selectImage(event) {
     if(event.target.files.length >0) {
       const file = event.target.files[0];
-      this.images = file;
+      this.image = file;
     }
   }
 
   onSubmit() {
     const formData = new FormData();
-    formData.append('file', this.images);
+    formData.append('file', this.image,this.image.name);
 
-    this.http.post<any>('http://localhost:3000/file',formData).subscribe (
-      (res: any) =>console.log(res),
-      (err: any) =>console.log(err)
+    this.http.post('http://127.0.0.1:5000/upload',formData).subscribe (
+      (res) =>console.log(res),
+      (err) =>console.log(err)
     );
   }
 
