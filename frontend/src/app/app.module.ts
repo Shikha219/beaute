@@ -9,8 +9,6 @@ import { HeaderComponentComponent } from './Components/header-component/header-c
 import { PopUpComponent } from './Components/pop-up/pop-up.component';
 import { FooterComponentComponent } from './Components/footer-component/footer-component.component';
 import { HomePageComponent } from './Pages/home-page/home-page.component';
-import { ProductsPageComponent } from './Pages/products-page/products-page.component';
-import { FinalProductsPageComponent } from './Pages/final-products-page/final-products-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -18,6 +16,9 @@ import { BannerComponentComponent } from './Components/banner-component/banner-c
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import {HttpClientModule} from '@angular/common/http';
+import { FoundationComponent } from './Pages/foundation/foundation.component';
+import { FavoriteButtonComponent } from './Components/favorite-button/favorite-button.component';
+import { LipstickComponent } from './Pages/lipstick/lipstick.component';
 
 @NgModule({
   declarations: [
@@ -25,9 +26,7 @@ import {HttpClientModule} from '@angular/common/http';
     HeaderComponentComponent,
     FooterComponentComponent,
     HomePageComponent,
-    ProductsPageComponent,
-    FinalProductsPageComponent,
-    BannerComponentComponent,PopUpComponent
+    BannerComponentComponent,PopUpComponent, FoundationComponent, FavoriteButtonComponent, LipstickComponent
   ],
   imports: [
     BrowserModule,

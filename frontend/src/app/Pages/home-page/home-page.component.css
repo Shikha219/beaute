@@ -49,3 +49,7 @@ mat-card:hover .tooltiptext {
   max-height: 240px;
   margin-top: 20%;
 }
+.card-2 .tooltiptext {
+  margin-top: 0;
+  top: 180px;
+}

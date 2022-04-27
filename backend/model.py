@@ -190,11 +190,9 @@ def predict():
     # image = cv2.imread('uploadedimages/women1.jpg')
     imagepaths = list(paths.list_images("D:/beaute/backend/uploadedimages"))
     image = ''
-    # i = 0
+
     for imagepath in imagepaths:
         image = cv2.imread(imagepath)
-        # if i == 0:
-        #     break
 
     # Resize image to a width of 250
     image = imutils.resize(image, width=250)

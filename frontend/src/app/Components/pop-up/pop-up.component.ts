@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {SharedService} from "../../Services/shared.service";
 
 @Component({
   selector: 'app-pop-up',
@@ -8,12 +9,21 @@ import {HttpClient} from '@angular/common/http';
 })
 export class PopUpComponent implements OnInit {
   image;
+  predictedTone;
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private shared: SharedService
     ) { }
 
   ngOnInit(): void {
+  }
+
+  convertObjToJSon(res) {
+    this.predictedTone = res
+    this.predictedTone = JSON.stringify(this.predictedTone)
+    this.predictedTone = this.predictedTone.slice(11,15);
+    this.shared.setTone(this.predictedTone)
   }
 
   selectImage(event) {
@@ -25,11 +35,14 @@ export class PopUpComponent implements OnInit {
 
   onSubmit() {
     const formData = new FormData();
-    formData.append('file', this.image,this.image.name);
+    formData.append('image', this.image,this.image.name);
 
     this.http.post('http://127.0.0.1:5000/upload',formData).subscribe (
-      (res) =>console.log(res),
-      (err) =>console.log(err)
+      (res) =>this.convertObjToJSon(res),
+      (err) =>console.log(err),
+      
+      
+      
     );
   }
 
