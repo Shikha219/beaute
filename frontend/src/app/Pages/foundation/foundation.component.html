@@ -1,5 +1,6 @@
 <app-header-component></app-header-component>
-<app-banner-component></app-banner-component>
+<app-banner-component *ngIf="display"></app-banner-component>
+<hr *ngIf="display2" />
 
 <div class="product-name">
   <h1>{{ title }}</h1>
@@ -384,7 +385,7 @@
       ><mat-card class="example-card">
         <img
           mat-card-image
-          src="../../../assets/foundation/dark/foundation2.png"
+          src="../../../assets/foundation/dark/foundation12.png"
           alt="Photo of a Shiba Inu"
         /> </mat-card
       ><app-favorite-button></app-favorite-button
@@ -474,7 +475,7 @@
       ><mat-card class="example-card">
         <img
           mat-card-image
-          src="../../../assets/foundation/dark/foundation12.png"
+          src="../../../assets/foundation/dark/foundation2.png"
           alt="Photo of a Shiba Inu"
         /> </mat-card
       ><app-favorite-button></app-favorite-button

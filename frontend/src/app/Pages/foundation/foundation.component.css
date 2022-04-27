@@ -24,5 +24,9 @@
     bottom: 10%;
     z-index: 3;
   }
-  
+  hr{
+    width: 98.8vw;
+    height: 2px;
+    color: var(--dark);
+  }
   

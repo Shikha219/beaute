@@ -1,5 +1,6 @@
 <app-header-component></app-header-component>
-<app-banner-component></app-banner-component>
+<app-banner-component *ngIf="display"></app-banner-component>
+<hr *ngIf="display2" />
 
 <div class="product-name">
   <h1>{{ title }}</h1>

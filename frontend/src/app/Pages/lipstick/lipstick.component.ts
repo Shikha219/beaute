@@ -14,6 +14,8 @@ export class LipstickComponent implements OnInit {
   mild = true
   tone: string
   title: string
+  display = true
+  display2 = false
 
   ngOnInit(): void {
     this.tone = this.shared.getTone()
@@ -21,6 +23,8 @@ export class LipstickComponent implements OnInit {
       this.title = "Lipsticks"
     }else{
       this.title = "Lipsticks for You"
+      this.display = false
+      this.display2 = true
       if(this.tone == "fair") {
         this.dark = false
         this.mild = false
